@@ -1,5 +1,5 @@
 {% set name = "planetary-computer" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 
 package:
@@ -8,14 +8,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/planetary-computer-{{ version }}.tar.gz
-  sha256: f39ba7183fd2c7d48764637948f5b142b18c6793ea80779b2573cc9cd9b04f0d
+  sha256: 95a76d18337a4dbeaa8919e71a433053398998a5e6f88e106f4c245849935b50
 
 build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
-    - "planetarycomputer = planetary_computer.scripts.cli:app"
+    - planetarycomputer = planetary_computer.scripts.cli:app
 
 requirements:
   host:
