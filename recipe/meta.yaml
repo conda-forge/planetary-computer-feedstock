@@ -20,12 +20,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - click >=7.1
     - pydantic >=1.7.3
-    - pystac <0.6,>=0.5.6
-    - python >=3.6
+    - pystac >=1.0.0
+    - pystac-client >=0.2.0
+    - python >=3.7
     - pytz >=2020.5
     - requests >=2.25.1
 
