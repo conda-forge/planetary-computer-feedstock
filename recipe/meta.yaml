@@ -1,5 +1,5 @@
 {% set name = "planetary-computer" %}
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/planetary-computer-{{ version }}.tar.gz
-  sha256: 69cc4dd94d937c52a7c3cd59704e2a8873eec0cbb8cad67347be02bb9b4eb036
+  sha256: 067512fd4c543a3044ed85888dcd6c12d120214c9f11bd5e47e318bc0631ee46
 
 build:
   number: 0
