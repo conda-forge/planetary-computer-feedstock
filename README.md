@@ -1,11 +1,11 @@
-About planetary-computer
-========================
+About planetary-computer-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/planetary-computer-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/planetary-computer/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/planetary-computer-feedstock/blob/main/LICENSE.txt)
 
 Summary: Planetary Computer SDK for Python
 
