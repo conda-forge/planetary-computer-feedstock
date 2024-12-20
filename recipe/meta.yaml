@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/planetary-computer-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/planetary-computer-{{ version }}.tar.gz
   sha256: 5958a8e1d8ba1aafc7ac45878df2d7d03405806ae31ed2e675333faebca960cc
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -20,14 +20,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - click >=7.1
     - packaging
     - pydantic >=1.7.3
     - pystac >=1.0.0
     - pystac-client >=0.2.0
-    - python >=3.7
+    - python >={{ python_min }}
     - python-dotenv
     - pytz >=2020.5
     - requests >=2.25.1
@@ -39,6 +39,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/planetary-computer/
